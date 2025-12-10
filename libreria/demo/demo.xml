@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data noupdate="1">
+
+    <!-- Demo Libro 1 -->
+    <record id="demo_libro_1" model="libreria.libro">
+      <field name="name">La Sombra del Viento</field>
+      <field name="libro_description">Novela de misterio escrita por Carlos Ruiz Zafón.</field>
+      <field name="pages">565</field>
+      <field name="price">22.50</field>
+      <field name="is_available">True</field>
+      <field name="publication_date">2001-04-01</field>
+      <field name="created_datetime">2025-12-10 21:00:00</field>
+    </record>
+
+    <!-- Demo Libro 2 -->
+    <record id="demo_libro_2" model="libreria.libro">
+      <field name="name">Don Quijote de la Mancha</field>
+      <field name="libro_description">Obra clásica de Miguel de Cervantes.</field>
+      <field name="pages">1023</field>
+      <field name="price">30.00</field>
+      <field name="is_available">True</field>
+      <field name="publication_date">1605-01-16</field>
+      <field name="created_datetime">2025-12-10 21:05:00</field>
+    </record>
+
+    <!-- Demo Libro 3 -->
+    <record id="demo_libro_3" model="libreria.libro">
+      <field name="name">El Código Da Vinci</field>
+      <field name="libro_description">Novela de misterio de Dan Brown.</field>
+      <field name="pages">489</field>
+      <field name="price">19.99</field>
+      <field name="is_available">False</field>
+      <field name="publication_date">2003-03-18</field>
+      <field name="created_datetime">2025-12-10 21:10:00</field>
+    </record>
+
+    <!-- Demo Libro 4 -->
+    <record id="demo_libro_4" model="libreria.libro">
+      <field name="name">Harry Potter y la Piedra Filosofal</field>
+      <field name="libro_description">Primera entrega de la saga de J.K. Rowling.</field>
+      <field name="pages">309</field>
+      <field name="price">15.00</field>
+      <field name="is_available">True</field>
+      <field name="publication_date">1997-06-26</field>
+      <field name="created_datetime">2025-12-10 21:15:00</field>
+    </record>
+
+    <!-- Demo Libro 5 -->
+    <record id="demo_libro_5" model="libreria.libro">
+      <field name="name">1984</field>
+      <field name="libro_description">Distopía de George Orwell sobre un mundo totalitario.</field>
+      <field name="pages">328</field>
+      <field name="price">18.00</field>
+      <field name="is_available">False</field>
+      <field name="publication_date">1949-06-08</field>
+      <field name="created_datetime">2025-12-10 21:20:00</field>
+    </record>
+
+  </data>
+</odoo>
