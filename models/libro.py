@@ -16,7 +16,7 @@ class Libreria(models.Model):
     created_datetime = fields.Datetime(string='Creado el')
     date_since_publication = fields.Integer(string='Días desde Publicación', compute='_compute_days')
     #Relacion ManyToMany
-    autores_ids = fields.Many2one(
+    autores_ids = fields.Many2many(
         'libreria.autor',
         string='Autores'
     )

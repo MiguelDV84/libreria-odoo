@@ -16,7 +16,7 @@
 
         <!-- VISTA FORMULARIO -->
         <record id="view_editorial_form" model="ir.ui.view">
-            <field name="name">editorial.form</field>
+            <field name="name">Editorial Form</field>
             <field name="model">libreria.editorial</field>
             <field name="arch" type="xml">
                 <form string="Editorial">
@@ -28,9 +28,9 @@
                             <page name="libros_publicados" string="Libros Publicados">
                                 <field name="libro_ids"/>
                                 <button name="action_assign_existing_books"
-                                string="Asignar libros existentes"
-                                type="object"
-                                class="oe_highlight"/>
+                                        string="Asignar libros existentes"
+                                        type="object"
+                                        class="oe_highlight"/>
                             </page>
                         </notebook>
                     </sheet>

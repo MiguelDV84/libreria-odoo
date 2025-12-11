@@ -7,9 +7,8 @@ class Autor(models.Model):
 
     name = fields.Char(string='Autor', required=True)
 
-    libro_ids = fields.One2many(
+    libro_ids = fields.Many2many(
         'libreria.libro',
-        'autor_id',
         string='Libros'
 
     )
