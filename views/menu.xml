@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- MENÚ -->
+        <menuitem name="Gestion de Libreria" id="libreria_menu_root"/>
+        <menuitem name="Gestión" id="libreria_menu_1" parent="libreria_menu_root"/>
+
+        <menuitem name="Libros" id="libreria_menu_2" parent="libreria_menu_1" action="libreria_libro_action_window"/>
+        <menuitem name="Autores" id="libreria_menu3" parent="libreria_menu_1" action="libreria_autor_action_window"/>
+        <menuitem name="Editoriales" id="libreria_menu4" parent="libreria_menu_1" action="libreria_editorial_action_window"/>
+    </data>
+</odoo>

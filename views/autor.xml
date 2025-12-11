@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- VISTA LISTA -->
+        <record id="libreria.autor_list" model="ir.ui.view">
+            <field name="name">autor.list</field>
+            <field name="model">libreria.autor</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                </list>
+            </field>
+        </record>
+        <!-- VISTA FORMULARIO -->
+         <record id="view_autor_form" model="ir.ui.view">
+            <field name="name">autor.form</field>
+            <field name="model">libreria.autor</field>
+            <field name="arch" type="xml">
+                <form string="Autor">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <notebook>
+                            <page name="libros_publicados" string="Libros Publicados">
+                                <field name="libro_ids"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- ACCIÓN -->
+        <record id="libreria_autor_action_window" model="ir.actions.act_window">
+            <field name="name">Listado de Autores</field>
+            <field name="res_model">libreria.autor</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+    </data>
+</odoo>
